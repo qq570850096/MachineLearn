@@ -52,6 +52,7 @@ class LogisticRegression:
 
         return self
     
+    # 逻辑回归中随机化梯度下降法的实现
     def fit_sgd(self, X_train, y_train, n_iters=5, t0=5, t1=50):
         """根据训练数据集X_train, y_train, 使用梯度下降法训练Linear Regression模型"""
         assert X_train.shape[0] == y_train.shape[0], \
